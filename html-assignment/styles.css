@@ -18,3 +18,27 @@ footer {
 #my-image {
     box-shadow: 0 0 2px 1px black;
     }
+/*list*/
+ul.hobbies {
+    list-style-type: square;
+}
+ul.hobbies li:nth-child(odd) {
+    background-color: burlywood;
+}
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: cadetblue;
+  border: 1px solid;
+}
+nav a:hover,
+nav a:focus {
+  background-color: brown;
+}
