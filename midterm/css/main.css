@@ -22,6 +22,7 @@ body {
   margin: auto;
   padding-bottom: 20px;      /* extra space at bottom */
 }
+
 /*
   STAGE (HEADER AREA):
   We use position: relative so we can position the title on top of the image.
@@ -39,4 +40,21 @@ body {
   height: 100%;
   object-fit: cover; /* keeps image from stretching and crops nicely */
   display: block;
+}
+
+/*
+  Title on top of the header image:
+  We place it with position:absolute.
+*/
+.site-title {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-weight: normal;
+  margin: 0;
 }
