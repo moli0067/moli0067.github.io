@@ -22,3 +22,21 @@ body {
   margin: auto;
   padding-bottom: 20px;      /* extra space at bottom */
 }
+/*
+  STAGE (HEADER AREA):
+  We use position: relative so we can position the title on top of the image.
+*/
+.stage {
+  position: relative;
+  width: 100%;
+  height: 260px; /* similar to the prototype header height */
+  overflow: hidden; /* hides extra parts of the image if needed */
+}
+
+/* Header image fills the header area */
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image from stretching and crops nicely */
+  display: block;
+}
