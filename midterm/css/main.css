@@ -1,0 +1,8 @@
+.main-nav ul {
+  list-style: none; /* removes bullet points */
+  margin: 0;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px; /* space between items */

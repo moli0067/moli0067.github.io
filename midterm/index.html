@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moli0067 Midterm</title>
+  <!--
+    This section contains setup information for the browser.
+    It does NOT show on the website page itself.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- This is the title that appears on the browser tab -->
+  <title>Moli0067 Midterm</title>
+
+  <!-- This connects the HTML file to the CSS file (design rules) -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+   <!--
+    WRAPPER:
+    This div is the main "box" that holds the entire website.
+    We center it on the screen and give it a background color.
+    This is exactly like what we did in class.
+  -->
+  <div class="wrapper">
+
+    <!--
+      HEADER STAGE:
+      In the prototype, there is a big image at the top with the title on top.
+      We create a "stage" (a container) with position: relative.
+      Then we put the image and title inside, and the title will be positioned
+      on top of the image with CSS.
+    -->
+    <header class="stage" id="home">
+
+      <!--
+        Header image:
+        Requirement says: Use the image tag (<img>) for the header image.
+        Put your image inside /midterm/images/
+      -->
+      <img class="header-img" src="images/image2.jpg" alt="Sea turtle swimming underwater above a coral reef">
+
+      <!--
+        The main title of the site.
+        CSS will place this text ON TOP of the image.
+      -->
+      <h1 class="site-title">Sea Turtle</h1>
+    </header>
     
 </body>
 </html>
