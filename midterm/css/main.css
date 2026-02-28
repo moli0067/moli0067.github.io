@@ -1,8 +1,24 @@
-.main-nav ul {
-  list-style: none; /* removes bullet points */
-  margin: 0;
-  padding: 12px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 22px; /* space between items */
+/* This makes width calculations easier for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Background color outside the main site box */
+body {
+  background-color: #a7d3d1; /* similar to the mockup teal background */
+  margin: 0;                /* removes default browser margins */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+  WRAPPER:
+  This is the main white/light box holding the entire page.
+  - width sets a fixed size (like class example)
+  - margin:auto centers it
+*/
+.wrapper {
+  width: 800px;
+  background-color: #cfe7e6; /* inner background similar to prototype */
+  margin: auto;
+  padding-bottom: 20px;      /* extra space at bottom */
+}
