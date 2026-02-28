@@ -58,3 +58,48 @@ body {
   font-weight: normal;
   margin: 0;
 }
+
+/*
+  NAV:
+  Same method from class:
+  - ul no bullets
+  - li inline-block
+  - each li width 33%
+  - border-right to create separators
+*/
+nav ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  font-size: 0;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 1px solid #999;
+  width: 33%;
+  padding: 12px 0;
+  vertical-align: top;
+}
+
+/* Removes the right border on the last menu item */
+nav li:last-child {
+  border-right: none;
+}
+
+nav li {
+    font-size: 16px; 
+}
+
+/* Link styling for nav */
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
