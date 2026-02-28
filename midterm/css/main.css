@@ -120,3 +120,24 @@ main {
   margin: 10px 18px 10px 0;
   border: 3px solid #8ab7b4;
 }
+
+/*
+  CLEARFIX:
+  When you float an element, the parent might "collapse".
+  This clearfix forces the parent section to contain the floated image properly.
+*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Headings spacing */
+h2 {
+  margin-top: 0;
+}
+
+/* Facts list spacing */
+ul {
+  margin-top: 8px;
+}
