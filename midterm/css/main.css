@@ -103,3 +103,20 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* Main spacing like the mockup */
+main {
+  padding: 18px;
+}
+
+/*
+  FLOAT IMAGE:
+  Requirement: image with text wrapping around it.
+  We use float:left just like in class.
+*/
+.img {
+  float: left;
+  width: 220px;
+  margin: 10px 18px 10px 0;
+  border: 3px solid #8ab7b4;
+}
