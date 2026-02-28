@@ -3,7 +3,7 @@
 <head>
   <!--
     This section contains setup information for the browser.
-    It does NOT show on the website page itself.
+    It does NOT show on the website page.
   -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
   <!-- This is the title that appears on the browser tab -->
   <title>Moli0067 Midterm</title>
 
-  <!-- This connects the HTML file to the CSS file (design rules) -->
+  <!-- This connects the HTML file to the CSS file -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -26,17 +26,13 @@
     <!--
       HEADER STAGE:
       In the prototype, there is a big image at the top with the title on top.
-      We create a "stage" (a container) with position: relative.
+      We create a "stage" with position: relative.
       Then we put the image and title inside, and the title will be positioned
       on top of the image with CSS.
     -->
     <header class="stage" id="home">
 
-      <!--
-        Header image:
-        Requirement says: Use the image tag (<img>) for the header image.
-        Put your image inside /midterm/images/
-      -->
+  
       <img class="header-img" src="images/image2.jpg" alt="Sea turtle swimming underwater above a coral reef">
 
       <!--
@@ -48,11 +44,6 @@
     <!--
       NAVIGATION:
       This is the menu with 3 items (Home, Story, Contact).
-      We use the same approach from class:
-      - ul has no bullets
-      - li uses inline-block
-      - each li has width: 33%
-      - border-right creates the dividers
     -->
     <nav>
       <ul>
@@ -65,38 +56,31 @@
     <!--
       MAIN CONTENT:
       This area contains the text, facts list, and the form.
-      The layout is kept very similar to the mockup.
     -->
     <main>
 
       <!--
         STORY SECTION:
-        Requirement: The image should have the text wrapping around it.
-        We do that using float:left (same as in class).
+        The image should have the text wrapping around it.
+        We do that using float:left.
       -->
       <section class="clearfix" id="story">
         <h2>Life of a Sea Turtle</h2>
          <!--
           This image will float left so the paragraphs wrap around it.
-          Put the turtle photo inside /images.
         -->
         <img class="img" src="images/image1.jpg" alt="Sea turtle swimming in the ocean">
          <!-- Clear, explanatory text -->
         <p>
-          Sea turtles are marine reptiles that have lived in Earth’s oceans for millions of years. They spend most
-          of their lives underwater, but they must swim up to the surface to breathe air. Many sea turtles travel
-          long distances to find food and to return to nesting beaches.
+          Sea turtles have spent millions of years in Earth's oceans because they exist as marine reptiles. They spend their life underwater but require surface swimming to breathe. Sea turtles need to travel long distances because they search for food and return to their nesting sites.
         </p>
 
         <p>
-          Sea turtles play an important role in ocean ecosystems. For example, some species help maintain healthy
-          seagrass beds, and others help balance marine food chains. Because they move through different areas of
-          the ocean, they contribute to the health of many habitats.
+          Sea turtles play an important role in ocean ecosystems. Some species of turtles help maintain healthy seagrass beds while other species protect the balance of marine food chains. Their movement across various ocean regions enables them to improve the ecological health of multiple marine environments.
         </p>
 
         <p>
-          Today, sea turtles face many threats such as plastic pollution, fishing nets, habitat loss, and climate
-          change. Learning about sea turtles helps people understand why protecting oceans is important.
+          Today, sea turtles face many threats which include plastic pollution and fishing nets and habitat loss and climate change. The study of sea turtles enables people to comprehend the importance of ocean conservation.
         </p>
       </section>
       <!--
@@ -113,6 +97,63 @@
           <li>Plastic is dangerous because turtles may confuse it with jellyfish.</li>
         </ul>
       </section>
-    
+
+      <!--
+        CONTACT SECTION: label "for" must match input "id".
+      -->
+      <section id="contact">
+        <h2>Contact to learn more</h2>
+
+        <form class="contact-box" action="#" method="post">
+
+          <!-- Name field -->
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text">
+
+          <!-- Email field -->
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email">
+          <!-- Message field -->
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <!--
+            Radio question:
+            This keeps the same style as the mockup (Yes / No / Maybe).
+          -->
+          <p class="question">Would you like to learn more about sea turtle conservation?</p>
+
+          <label for="yes">
+            <input id="yes" type="radio" name="learn" value="yes">
+            Yes
+          </label>
+          <label for="no">
+            <input id="no" type="radio" name="learn" value="no">
+            No
+          </label>
+
+          <label for="maybe">
+            <input id="maybe" type="radio" name="learn" value="maybe">
+            Maybe
+          </label>
+
+          <!-- Submit button -->
+          <div class="btn-row">
+            <button type="submit">Send</button>
+          </div>
+
+        </form>
+      </section>
+      </main>
+
+    <!--
+      FOOTER:
+      We keep it simple like the prototype and align it to the right.
+    -->
+    <footer>
+      <p>&copy; Sea Turtle.</p>
+    </footer>
+
+  </div>
 </body>
 </html>
