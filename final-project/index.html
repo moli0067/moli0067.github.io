@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -28,25 +37,19 @@
         <!--Search button-->
         <form class="search-form" action="#" method="get">
             <input type="text" name="search" placeholder="Search">
-            <button type="submit">Search</button>
+            <button type="submit" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
         </form>
     </header>
-
+    <main>
+    <!-- Main Banner Image and Welcome Section -->
+    <div class="banner">
+        <h1>Welcome to Three Star Media</h1>
+        <!-- Short welcome text (placeholder for real content) -->
+        <p class="welcome-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi cumque numquam dolorem illum, ipsam accusamus velit labore vel dolor. Vitae, voluptatum maxime fugit adipisci suscipit veniam tempora quae voluptas <br><a href="#contact">Connect with us <i class="fa-solid fa-caret-right"></i></a></p>
+    </div>
     <!-- Hero banner section -->
-     <section class="hero-banner" id="home">
-        <img src="images/main-banner.jpg" alt="Office workspace">
-
-        <div class="hero-content">
-            <h1>Welcome to Three Star Media</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum
-                voluptas nesciunt quam nostrum similique nihil laboriosam provident neque,
-                recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus
-                facilis iusto consequuntur.
-            </p>
-            <a href="#contact" class="hero-button">Connect with us</a>
-        </div>
-    </section>
 
     <!-- About us section -->
     <section class="about-section" id="about">
@@ -71,39 +74,38 @@
     <!-- Services section -->
     <section class="services-section" id="services">
         <h2>Our Services</h2>
-        
-        <article class="service-card">
+            <article class="service-card">
             <img src="images/digital.jpg" alt="Person using phone and laptop">
             <h3>Digital Transformation</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, tempore minima? Commodi, nobis voluptate sit quasi et error, officia sapiente ullam, laboriosam facere veniam quod voluptatum placeat. Corporis, beatae alias.</p>
             <a href="#">Digital Plans</a>
         </article>
             
         <article class="service-card">
             <img src="images/marketing.jpg" alt="Laptop showing charts">
             <h3>Marketing</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias similique corrupti laborum eius adipisci quia tempore excepturi error nobis eligendi laboriosam maxime libero ipsa inventore sed doloribus, nesciunt aliquam?</p>
             <a href="#">Marketing Plans</a>
         </article>
         
         <article class="service-card">
             <img src="images/video.jpg" alt="Phone with video app">
             <h3>Video Production</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem et cum, fugit consequatur optio similique unde vero voluptates laboriosam magnam animi esse necessitatibus aperiam labore rem provident iusto a possimus.</p>
             <a href="#">Video Plans</a>
         </article>
 
         <article class="service-card">
             <img src="images/web.jpg" alt="Phone and notebook">
             <h3>Web Development</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem veritatis veniam molestias. Obcaecati eaque harum totam cupiditate? Accusantium blanditiis alias nam repudiandae, odit dolorem repellat aspernatur eius. Necessitatibus, ad.</p>
             <a href="#">Web Plans</a>
         </article>
 
         <article class="service-card">
             <img src="images/print.jpg" alt="Newspaper boxes">
             <h3>Print</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur maxime quod ullam, consequatur eaque debitis dolor quo harum odit! In reiciendis facere corporis temporibus est odit aperiam eveniet laborum!</p>
             <a href="#">Print Plans</a>
         </article>
     </section>
@@ -115,9 +117,7 @@
         <div class="vision-content">
             <h2>Our Vision</h2>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptatem
-                deleniti iure, accusantium rerum est commodi veniam tempora explicabo
-                officiis fugiat eaque. Veritatis exercitationem delectus ea ab laudantium.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero alias, quod dolores dignissimos, eaque ratione doloremque qui voluptas minima sint modi enim quo dolorum architecto. Debitis corrupti dolorem architecto voluptate.
             </p>
             <a href="#">Learn More</a>
         </div>
@@ -178,13 +178,14 @@
         <div class="location-area">
             <h3>Location</h3>
                 
-            <iframe 
+            <iframe
+                class="map-frame"
                 src="https://www.google.com/maps?q=Algonquin+College+Ottawa&output=embed"
-                height="300" 
-                style="border:0; width:100%;"
-                allowfullscreen="" 
+                height="300"
+                allowfullscreen=""
                 loading="lazy">
             </iframe>
+
         </div>
         
 <!-- Hours of operation -->
